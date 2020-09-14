@@ -2,9 +2,9 @@ body, html {
   height: 100%;
   font-family: 'Kumbh Sans', sans-serif;
   background-color:ffffff;
-  
+  margin: 0px;
+  padding: 0px;
 }
-
 
 /* Navbar container */
 .navbar {
@@ -144,7 +144,6 @@ body > div:nth-child(3) > section > figure > img{
 
 /*Pizzas Favoritas*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
 .container{
@@ -261,3 +260,167 @@ body > div.container > div:nth-child(3) > div.top-text > div{
   text-align: center;
   margin: 20px;
 }
+
+
+/*footer Principal Container*/
+
+.footer-principal{
+  background-color: #210e07;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
+}
+
+/*footer Esquerdo*/
+
+.footer-principal .footer-esquerdo{
+  float: left; /* A caixa fluara para direita do elemento esquerdo.*/
+}
+
+.footer-principal .footer-links{
+  color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-principal .footer-links a{
+  display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-principal .footer-horario{
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icones */
+
+.footer-principal .footer-icones{
+	margin-top: 40px;
+}
+
+.footer-principal .footer-icones a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:   #e74c3c;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-principal .footer-direito{
+	float: right;
+}
+
+.footer-principal .footer-direito p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+.footer-principal form{
+	display: inline-block;
+}
+
+.footer-principal form input,
+.footer-principal form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #f4f4f4;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  black;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-principal ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-principal ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-principal :-ms-input-placeholder{
+	color:  #5c666b;
+}
+/*Distância dos campos email mensagem*/
+.footer-principal form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-principal form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-principal form button{
+	border-radius: 3px;
+	background-color:  #e74c3c;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+  float: right;
+  cursor: pointer
+}
+
+/*Footer Responsivo com media query*/
+
+@media (max-width: 800px) {
+
+	.footer-principal{
+		padding: 30px;
+	}
+
+	.footer-principal .footer-left,
+	.footer-principal .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-principal .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-principal form{
+		margin-top: 30px;
+	}
+
+	.footer-principal form{
+		display: block;
+	}
+
+	.footer-principal form button{
+		float: none;
+	}
+}
+
+/*fim footer responsivo*/
